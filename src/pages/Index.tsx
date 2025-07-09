@@ -74,10 +74,11 @@ const Index = () => {
       {/* Hero Section */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-5xl font-bold text-black mb-6">Блог</h2>
+          <h2 className="text-5xl font-bold text-black mb-6">
+            Kazuscara's lover's
+          </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Делимся знаниями, идеями и полезным контентом. Подписывайтесь на наш
-            канал, чтобы не пропустить новые материалы.
+            ссылки на тгк и предложку
           </p>
           <div className="flex gap-4 justify-center">
             <Button
