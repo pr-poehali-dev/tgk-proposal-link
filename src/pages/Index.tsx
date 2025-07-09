@@ -91,52 +91,15 @@ const Index = () => {
               <Icon name="Send" size={18} className="mr-2" />
               Наш ТГК
             </Button>
-            <Button variant="outline" size="lg">
+            <Button
+              variant="outline"
+              size="lg"
+              onClick={() =>
+                window.open("https://t.me/Kazuscaraquestions_bot", "_blank")
+              }
+            >
               Наша предложка
             </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Blog Posts */}
-      <section className="py-12 px-6">
-        <div className="max-w-4xl mx-auto">
-          <h3 className="text-2xl font-bold text-black mb-8">
-            Последние посты
-          </h3>
-          <div className="grid gap-8">
-            {blogPosts.map((post) => (
-              <Card
-                key={post.id}
-                className="border border-gray-200 hover:shadow-md transition-shadow"
-              >
-                <CardHeader>
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <h4 className="text-xl font-semibold text-black mb-2">
-                        {post.title}
-                      </h4>
-                      <p className="text-gray-600">{post.excerpt}</p>
-                    </div>
-                    <Button variant="outline" size="sm">
-                      Читать
-                    </Button>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex items-center gap-4 text-sm text-gray-500">
-                    <span>{post.date}</span>
-                    <span>•</span>
-                    <span>{post.readTime}</span>
-                    <span>•</span>
-                    <div className="flex items-center gap-1">
-                      <Icon name="MessageCircle" size={14} />
-                      <span>Комментарии</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
           </div>
         </div>
       </section>
