@@ -43,24 +43,24 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="border-b border-gray-100 py-6">
+      <header className="border-b border-border py-6">
         <div className="max-w-4xl mx-auto px-6">
           <div className="flex justify-between items-center">
-            <h1 className="text-2xl font-bold text-black">ЛБ</h1>
+            <h1 className="text-2xl font-bold text-foreground">ЛБ</h1>
             <div className="flex items-center gap-4">
               <div className="relative">
                 <Input
                   placeholder="Поиск..."
-                  className="w-64 pl-10 border-gray-200"
+                  className="w-64 pl-10 border-border"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />
                 <Icon
                   name="Search"
                   size={18}
-                  className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+                  className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground"
                 />
               </div>
               <Button variant="outline" size="sm">
@@ -74,16 +74,16 @@ const Index = () => {
       {/* Hero Section */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-5xl font-bold text-black mb-6">
+          <h2 className="text-5xl font-bold text-foreground mb-6">
             Kazuscara's lover's
           </h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             ссылки на тгк и предложку
           </p>
           <div className="flex gap-4 justify-center">
             <Button
               size="lg"
-              className="bg-black text-white hover:bg-gray-800"
+              className="bg-primary text-primary-foreground hover:bg-primary/90"
               onClick={() =>
                 window.open("https://t.me/kazuscaralover", "_blank")
               }
@@ -105,19 +105,23 @@ const Index = () => {
       </section>
 
       {/* Telegram Channel Section */}
-      <section className="py-16 px-6 bg-gray-50">
+      <section className="py-16 px-6 bg-secondary">
         <div className="max-w-4xl mx-auto text-center">
-          <Icon name="Send" size={48} className="mx-auto mb-6 text-black" />
-          <h3 className="text-3xl font-bold text-black mb-4">
+          <Icon
+            name="Send"
+            size={48}
+            className="mx-auto mb-6 text-foreground"
+          />
+          <h3 className="text-3xl font-bold text-foreground mb-4">
             Наш Telegram канал
           </h3>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Присоединяйтесь к нашему сообществу в Telegram. Получайте
             уведомления о новых постах и эксклюзивный контент.
           </p>
           <Button
             size="lg"
-            className="bg-black text-white hover:bg-gray-800"
+            className="bg-primary text-primary-foreground hover:bg-primary/90"
             onClick={() => window.open("https://t.me/kazuscaralover", "_blank")}
           >
             <Icon name="ExternalLink" size={18} className="mr-2" />
@@ -129,19 +133,21 @@ const Index = () => {
       {/* Newsletter Subscription */}
       <section className="py-16 px-6">
         <div className="max-w-2xl mx-auto text-center">
-          <h3 className="text-2xl font-bold text-black mb-4">Наша предложка</h3>
-          <p className="text-gray-600 mb-8">
+          <h3 className="text-2xl font-bold text-foreground mb-4">
+            Наша предложка
+          </h3>
+          <p className="text-muted-foreground mb-8">
             Подпишитесь на рассылку, чтобы получать дайджест лучших материалов
           </p>
           <div className="flex gap-4 max-w-md mx-auto">
             <Input
               placeholder="Ваш email"
-              className="flex-1 border-gray-200"
+              className="flex-1 border-border"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
             <Button
-              className="bg-black text-white hover:bg-gray-800"
+              className="bg-primary text-primary-foreground hover:bg-primary/90"
               onClick={handleSubscribe}
               disabled={isSubscribed}
             >
@@ -157,12 +163,12 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-gray-100 py-8 px-6">
+      <footer className="border-t border-border py-8 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-6">
-              <h4 className="font-bold text-black">ЛБ</h4>
-              <div className="flex items-center gap-4 text-sm text-gray-600">
+              <h4 className="font-bold text-foreground">ЛБ</h4>
+              <div className="flex items-center gap-4 text-sm text-muted-foreground">
                 <span>Блог</span>
                 <span>•</span>
                 <span>Канал</span>
@@ -171,9 +177,9 @@ const Index = () => {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <Icon name="Send" size={20} className="text-gray-400" />
-              <Icon name="Search" size={20} className="text-gray-400" />
-              <Icon name="Rss" size={20} className="text-gray-400" />
+              <Icon name="Send" size={20} className="text-muted-foreground" />
+              <Icon name="Search" size={20} className="text-muted-foreground" />
+              <Icon name="Rss" size={20} className="text-muted-foreground" />
             </div>
           </div>
         </div>
