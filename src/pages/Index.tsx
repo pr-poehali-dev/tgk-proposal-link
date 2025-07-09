@@ -84,7 +84,7 @@ const Index = () => {
               size="lg"
               className="bg-black text-white hover:bg-gray-800"
               onClick={() =>
-                window.open("https://t.me/+QgiLIa1gFRY4Y2Iy", "_blank")
+                window.open("https://t.me/kazuscaralover", "_blank")
               }
             >
               <Icon name="Send" size={18} className="mr-2" />
@@ -154,9 +154,7 @@ const Index = () => {
           <Button
             size="lg"
             className="bg-black text-white hover:bg-gray-800"
-            onClick={() =>
-              window.open("https://t.me/+QgiLIa1gFRY4Y2Iy", "_blank")
-            }
+            onClick={() => window.open("https://t.me/kazuscaralover", "_blank")}
           >
             <Icon name="ExternalLink" size={18} className="mr-2" />
             Подписаться на канал
